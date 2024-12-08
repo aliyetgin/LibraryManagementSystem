@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="adminStyles.css">
+</head>
+<body>
+<header>
+    <h1>Admin Dashboard</h1>
+</header>
+
+<div class="container">
+    <h2>Manage Books</h2>
+    <form id="add-book-form">
+        <input type="text" id="title" placeholder="Book Title" required />
+        <input type="text" id="author" placeholder="Book Author" required />
+        <input type="text" id="genre" placeholder="Genre" required />
+        <input type="number" id="quantity" placeholder="Quantity" required />
+        <button type="submit">Add Book</button>
+    </form>
+
+    <h2>Edit/Delete Books</h2>
+    <ul id="book-list"></ul>
+
+    <h2>Manage Users</h2>
+    <button onclick="window.location.href='/admin/manage-users.html'">View Users</button>
+
+    <h2>Track Fines</h2>
+    <button onclick="window.location.href='/admin/manage-fines.html'">View Fines</button>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

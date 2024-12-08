@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="userStyle.css">
+</head>
+<body onload="fetchBooks()">
+<header>
+    <h1>User Dashboard</h1>
+</header>
+
+<div class="container">
+    <!-- Book Search and View -->
+    <h2>Search for Books</h2>
+    <input type="text" id="search-title" placeholder="Search by title" />
+    <input type="text" id="search-author" placeholder="Search by author" />
+    <button onclick="searchBooks()">Search</button>
+
+    <h2>Available Books</h2>
+    <ul id="book-list"></ul>
+
+    <h2>Issue/Return Books</h2>
+    <button onclick="window.location.href='/user/issue-return-books.html'">Issue/Return Books</button>
+
+    <h2>Pay Fines</h2>
+    <button onclick="window.location.href='/user/pay-fines.html'">Pay Fines</button>
+</div>
+
+<script src="user.js"></script>
+</body>
+</html>

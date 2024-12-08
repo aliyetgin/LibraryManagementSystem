@@ -1,0 +1,77 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #7f8c8d;
+}
+
+/* Button container */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Button focus effect */
+button:focus {
+    outline: none;
+}
+
+/* Styling for large screens */
+@media (min-width: 768px) {
+    body {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 20px 40px;
+    }
+}
